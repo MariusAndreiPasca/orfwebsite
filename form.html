@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="form-body">
+    <nav class="main-nav" aria-label="Navigation Menu">
+      <section class="burger" aria-label="Open Navigation Menu Button">
+        🍔
+      </section>
+      <ul class="nav-ul">
+        <li>
+          <a href="./index.html" class="nav-link">Home</a>
+        </li>
+        <li><a href="./Ö3.html" class="nav-link">Top 40</a></li>
+        <li>
+          <a href="./form.html" class="nav-link" aria-current="page">Kontakt</a>
+        </li>
+      </ul>
+    </nav>
+
+    <header class="header-logo" role="banner">
+      <h1>
+        <a
+          href="./index.html"
+          class="orf-logo"
+          aria-label="ORF Logo"
+          aria-hidden="true"
+        >
+          <span>Kontakt</span>
+          <img
+            src="https://orf.at/mojo/1_4_1/storyserver//news/news/images/target_news.svg"
+            width="150"
+            height="100"
+            alt="Orf News Logo"
+          />
+        </a>
+      </h1>
+      <address class="footer-address contact-address">
+        ORF-Zentrum<br />
+        Würzburggase 30<br />
+        1136 Wien<br />
+      </address>
+    </header>
+
+    <main class="main-form">
+      <form action="#" method="POST" aria-labelledby="form-title">
+        <label for="name">Ihr Name <span aria-hidden="true">*</span></label
+        ><br />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          placeholder="Ihren Namen eingeben"
+          aria-required="true"
+          aria-describedby="name-desc"
+        /><br />
+        <small id="name-desc"
+          >Bitte geben Sie Ihren vollständigen Namen ein.</small
+        ><br /><br />
+
+        <label for="email">Ihre E-Mail <span aria-hidden="true">*</span></label
+        ><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="Ihre E-Mail-Adresse eingeben"
+          aria-required="true"
+          aria-describedby="email-desc"
+        /><br />
+        <small id="email-desc"
+          >Wir benötigen Ihre E-Mail-Adresse, um Sie zu kontaktieren.</small
+        ><br /><br />
+
+        <label for="message"
+          >Ihre Nachricht <span aria-hidden="true">*</span></label
+        ><br />
+        <textarea
+          id="message"
+          name="message"
+          required
+          placeholder="Ihre Nachricht hier schreiben"
+          aria-required="true"
+          style="width: 100%; height: 150px"
+          aria-describedby="message-desc"
+        ></textarea
+        ><br />
+        <small id="message-desc"
+          >Teilen Sie uns bitte Ihre Anfrage oder Nachricht mit.</small
+        ><br /><br />
+
+        <label for="dropdown"
+          >GIS Optionen <span aria-hidden="true">*</span></label
+        ><br />
+        <select id="dropdown" name="dropdown" required aria-required="true">
+          <option value="" disabled selected>Bitte wählen...</option>
+          <option value="befreit">GIS-Befreit</option>
+          <option value="schwarzseher">Schwarzseher</option>
+          <option value="bezahler">GIS-Bezahler</option></select
+        ><br /><br />
+
+        <input
+          class="input-checkbox"
+          type="checkbox"
+          id="AGB"
+          required
+          name="AGB"
+          aria-required="true"
+        />
+        <label for="AGB"
+          >Ich akzeptiere die Allgemeinen Geschäftsbedingungen (<a
+            href="https://www.bmbwf.gv.at/dam/jcr:840f21eb-d618-4611-9aa4-28a9bd9afa1a/Allgemeine_Geschaeftsbedingungen.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            >AGB</a
+          >)</label
+        ><br /><br />
+
+        <button type="submit" aria-label="Formular absenden">
+          <i class="fa paper-plane"> Senden</i>
+        </button>
+      </form>
+    </main>
+
+    <footer role="contentinfo">
+      <br />
+      <hr />
+      <nav class="footer-nav" aria-label="Footer Navigation">
+        <ul>
+          <li><a class="footer-link" href="#">Impressium</a></li>
+          <li><a class="footer-link" href="#">Datenschutz</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
